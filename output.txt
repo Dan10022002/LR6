@@ -1,0 +1,4 @@
+Gorina Nataliya Viktorovna Tankovaya 12 8 Woman  48
+Papich Grigorii Anantolievich Tankovaya 18 45 Man  87
+Yasenko Danil Vyacheslavovich Polini Osipenko 2 634 Man  18
+There are 1 people with age > 80 living on the Tankovaya street
