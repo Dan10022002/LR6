@@ -112,16 +112,16 @@ int main()
     */
     std::ifstream infile("input.txt");
     std::string str;
+    std::string SNP;
+    std::string Street;
+    int House_number;
+    int Flat_number;
+    bool Gender;
+    int Age;
     while (!infile.eof())
     {
         for (int k=0; k<6*n; k++)
         {
-            std::string SNP;
-            std::string Street;
-            int House_number;
-            int Flat_number;
-            bool Gender;
-            int Age;
             std::getline(infile, str);
             if (k%6==0)
             {
