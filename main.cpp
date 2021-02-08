@@ -112,15 +112,14 @@ void Text_writing(std::vector<citizen>& utilities)
     outfile.close();
 }
 
-void Bin_reading(std::vector<citizen>& utilities, int& n)
+void Bin_reading(std::vector<citizen>& utilities)
 {
     std::ifstream infile("input2.txt", std::ios::binary);
     citizen Citizen;
     address Address;
     uint8_t string_size;
-    for (int h = 0; h < n; h++)
+    while (infile.read(reinterpret_cast<char*> (&string_size), sizeof(uint8_t)))
     {
-        infile.read(reinterpret_cast<char*> (&string_size), sizeof(uint8_t));
         Citizen.snp.resize(string_size);
         infile.read(Citizen.snp.data(), string_size);
         infile.read(reinterpret_cast<char*> (&string_size), sizeof(uint8_t));
